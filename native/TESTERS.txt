@@ -1,0 +1,38 @@
+SoundMaster 0.9.0 beta - tester notes
+=====================================
+
+Thanks for testing! SoundMaster manages your real Windows audio: default devices,
+per-device and per-app volume, and a live audio-flow diagram.
+
+REQUIREMENTS
+  Windows 10 or 11. Nothing to install (.NET Framework 4.8 is already part of Windows).
+
+INSTALL
+  1. Right-click the zip > Properties > tick "Unblock" > OK (if the box is there).
+  2. Extract it to a normal folder you own, e.g. Desktop\SoundMaster
+     (not Program Files - logs are written next to the exe).
+  3. Double-click SoundMaster.exe.
+
+  Windows SmartScreen may say "Windows protected your PC" because this beta is not
+  code-signed. Click "More info" > "Run anyway".
+
+WHAT TO TRY
+  - Ctrl+1..4 switches views: Audio flow, Playback, Recording, Apps.
+  - Set default / Comm on a device, and check the Windows Sound settings agree.
+  - Volume, mute and meters on devices and on apps.
+  - Audio flow: click cards to trace paths; drag an app onto a different output.
+  - Moon/sun button at the bottom of the sidebar toggles dark mode.
+  - Disable/Enable a device asks for admin (UAC) approval - expected.
+
+REPORTING A PROBLEM
+  Please send:
+  - What you did, what you expected, what happened (a screenshot helps).
+  - Your Windows version (Win+R, type winver).
+  - soundmaster-errors.log from the SoundMaster folder, if it exists.
+  - A diagnostic: open a Command Prompt in the SoundMaster folder and run
+        SoundMaster.exe --selftest > diag.txt
+    then send diag.txt (it lists your audio devices; nothing is changed).
+
+UNINSTALL
+  Delete the folder. Optional: delete registry key HKCU\Software\SoundMaster
+  (only stores the dark-mode setting).
