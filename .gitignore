@@ -1,7 +1,31 @@
 # Build output — rebuild with native\build.bat, package with native\make-dist.ps1
 SoundMaster.exe
 dist/
+bin/
+obj/
 
-# Runtime logs written next to the exe
+# Runtime logs and diagnostics written next to the exe (list real audio devices)
 *.log
 diag.txt
+
+# Secrets and code-signing material — never commit
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+*.snk
+*.cer
+
+# Local tool/editor state
+.claude/
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
