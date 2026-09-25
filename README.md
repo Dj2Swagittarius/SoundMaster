@@ -4,6 +4,15 @@ A real, native Windows program that manages your actual audio. One exe, no insta
 runtimes to download, no browser anywhere — built with the C# compiler that ships inside
 Windows. Runs on Windows 10 (incl. IoT LTSC).
 
+![SoundMaster icon](native/app-256.png)
+
+## Download
+
+Grab the latest zip from **[Releases](https://github.com/Dj2Swagittarius/SoundMaster/releases)**
+(current: [0.9.0 beta](https://github.com/Dj2Swagittarius/SoundMaster/releases/tag/v0.9.0-beta)).
+Unblock the zip (right-click > Properties > Unblock), extract it to a folder you own, and run
+`SoundMaster.exe`. The beta is not code-signed, so SmartScreen may warn: **More info > Run anyway**.
+
 ## Run it
 
 Double-click **`SoundMaster.exe`**. That's the whole install.
